@@ -162,8 +162,8 @@ importers:
         specifier: ^2.0.1
         version: 2.3.0(rollup@4.48.0)(vite@5.4.19(@types/node@20.19.11)(lightningcss@1.30.1))
       vite-plugin-static-copy:
-        specifier: ^1.0.1
-        version: 1.0.6(vite@5.4.19(@types/node@20.19.11)(lightningcss@1.30.1))
+        specifier: ^2.3.2
+        version: 2.3.2(vite@5.4.19(@types/node@20.19.11)(lightningcss@1.30.1))
 
 packages:
 
@@ -3528,6 +3528,10 @@ packages:
     resolution: {integrity: sha512-VFqfGDHlx87K66yZrNdI4YGtD70IRyd+zSvgks6mzHPRNkoKy+9EKP4SFC77/vTTQYmRmti7dvqC+m5jBrBAcg==}
     engines: {node: '>=12'}
 
+  p-map@7.0.3:
+    resolution: {integrity: sha512-VkndIv2fIB99swvQoA65bm+fsmt6UNdGeIB0oxBs+WhAhdh08QA04JXpI7rbB9r08/nkbysKoya9rtDERYOYMA==}
+    engines: {node: '>=18'}
+
   p-some@5.0.0:
     resolution: {integrity: sha512-Js5XZxo6vHjB9NOYAzWDYAIyyiPvva0DWESAIWIK7uhSpGsyg5FwUPxipU/SOQx5x9EqhOh545d1jo6cVkitig==}
     engines: {node: '>=10'}
@@ -4461,11 +4465,11 @@ packages:
       rollup: ^4.44.1
       vite: ^5.4.11 || ^6.0.0 || ^7.0.0
 
-  vite-plugin-static-copy@1.0.6:
-    resolution: {integrity: sha512-3uSvsMwDVFZRitqoWHj0t4137Kz7UynnJeq1EZlRW7e25h2068fyIZX4ORCCOAkfp1FklGxJNVJBkBOD+PZIew==}
+  vite-plugin-static-copy@2.3.2:
+    resolution: {integrity: sha512-iwrrf+JupY4b9stBttRWzGHzZbeMjAHBhkrn67MNACXJVjEMRpCI10Q3AkxdBkl45IHaTfw/CNVevzQhP7yTwg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
-      vite: ^5.0.0
+      vite: ^5.0.0 || ^6.0.0
 
   vite@5.4.19:
     resolution: {integrity: sha512-qO3aKv3HoQC8QKiNSTuUM1l9o/XX3+c+VTgLHbJWHZGeTPVAg2XwazI9UWzoxjIJCGCV2zU60uqMzjeLZuULqA==}
@@ -8319,6 +8323,8 @@ snapshots:
     dependencies:
       aggregate-error: 4.0.1
 
+  p-map@7.0.3: {}
+
   p-some@5.0.0:
     dependencies:
       aggregate-error: 3.1.0
@@ -9361,11 +9367,12 @@ snapshots:
       rollup: 4.48.0
       vite: 5.4.19(@types/node@20.19.11)(lightningcss@1.30.1)
 
-  vite-plugin-static-copy@1.0.6(vite@5.4.19(@types/node@20.19.11)(lightningcss@1.30.1)):
+  vite-plugin-static-copy@2.3.2(vite@5.4.19(@types/node@20.19.11)(lightningcss@1.30.1)):
     dependencies:
       chokidar: 3.6.0
       fast-glob: 3.3.3
       fs-extra: 11.3.1
+      p-map: 7.0.3
       picocolors: 1.1.1
       vite: 5.4.19(@types/node@20.19.11)(lightningcss@1.30.1)
 
